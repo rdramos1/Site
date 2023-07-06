@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mika E-Books</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/fontawesome/fontawesome-free-6.4.0-web/css/all.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card1">
+            <img src="/produtos/imagens/14 DIAS NA DIETA.pdf.png" alt="">
+        </div>
+        <div class="card2">
+            <h1 class="titulo">
+                14 DIAS NA DIETA    
+            </h1>
+            <p>
+                Mudar de vida através de 14 dias na Dieta Um método desenvolvido pensando em ajudar pessoas que não possuem muito tempo, por estarem sempre envolvidos com seus trabalhos, família, amigos, faculdade e etc. É um Desafio de 14 Dias, alterando a alimentação atual, inserindo Chás Seca Barriga, Receitas Low Carb, Sucos Detox, Sobremesas Fit, Treinos Simples e Práticos e muito mais, para perder de 7 a 13kgs em 2 semanas!            </p>
+        </div>
+        <div class="card3">
+            <p class="preco">Preço: R$ 20,00</p> 
+            <a href="https://pay.kiwify.com.br/NLoXmmR" class="botao-comprar">Comprar</a>
+        </div>
+        
+    </div>
+    <div class="buttons">
+        <button class="zap" onclick="compartilharWhatsApp()"><i class="fab fa-whatsapp"></i> </button>
+        <button class="face" onclick="compartilharFacebook()"><i class="fab fa-facebook"></i> </button>
+        <button class="inst" onclick="compartilharInstagram()"><i class="fab fa-instagram"></i> </button>
+    </div>
+
+    <script>
+        var texto = "comprei este ebook incrível e já esta começando a fazer efeito, super recomendo"
+        var url = "mika-ebooks.netlify.app/produtos/page2.html"
+        var imagem = "https://mika-ebooks.netlify.app/produtos/imagens/14%20DIAS%20NA%20DIETA.pdf.png" 
+
+        
+function compartilharWhatsApp() {
+  var link = `https://api.whatsapp.com/send?text=${texto}%20${url}`;
+  window.open(link);
+}
+
+function compartilharFacebook() {
+  var link = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${texto}&picture=${imagem}`;
+  window.open(link);
+}
+
+function compartilharInstagram() {
+  var link = `https://www.instagram.com/sharer.php?u=${url}&title=${texto}&thumbnailUrl=${imagem}`;
+  window.open(link);
+}
+
+    </script>
+
+</body>
+</html>

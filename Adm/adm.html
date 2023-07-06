@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mika E-books</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/icon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn"><i class="fa fa-bars">☰</i></label>
+    <label class="logo">Admin</label>
+    <ul>
+      <li><a class="hr" href="#saude-mental">Saúde Mental</a></li>
+      <li><a class="kiwify" href="https://dashboard.kiwify.com.br/">Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <form action="product.php" method="post" onsubmit="executarCodigo(event)">
+   
+      <label for="imagem">Campo para soltar imagem:</label>
+      <input type="file" id="imagem" name="imagem" accept="image/*">
+ 
+      <label for="titulo">Campo de texto para o título do produto:</label>
+      <input type="text" id="titulo" name="titulo">
+ 
+      <label for="descricao">Campo de texto para a descrição do produto:</label>
+      <textarea id="descricao" name="descricao"></textarea>
+ 
+      <label for="valor">Campo de texto para o valor do produto:</label>
+      <input type="text" id="valor" name="valor">
+ 
+      <label for="link">Campo de texto para o link de redirecionamento:</label>
+      <input type="text" id="link" name="link">
+   
+   
+      <button>Clique aqui</button>
+    </form>
+  </div>
+
+  <script>
+    function executarCodigo(event) {
+  event.preventDefault(); // Impede o envio do formulário padrão
+
+  fetch('product.php', {
+    method: 'POST',
+    body: new FormData(event.target)
+  })
+  .then(response => response.text())
+  .then(data => console.log(data));
+}
+
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDP45H4ZV6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YDP45H4ZV6');
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mika E-Books</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/fontawesome/fontawesome-free-6.4.0-web/css/all.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card1">
+            <img src="/produtos/imagens/300 RECEITAS PARA EMAGRECER.pdf.png" alt="">
+        </div>
+        <div class="card2">
+            <h1 class="titulo">
+                300 receitas para emagreçer   
+            </h1>
+            <p>
+                O Ebook 300 receitas para emagrecer foi criado com intuito de ajudar pessoas nas suas dietas, ter um ebook como esse e importante para não ficar perdido sem saber o que comer quando estiver querendo perder peso.            </p>
+        </div>
+        <div class="card3">
+            <p class="preco">Preço: R$ 40,00</p> 
+            <a href="https://pay.kiwify.com.br/6D4DD79" class="botao-comprar">Comprar</a>
+        </div>
+        
+    </div>
+    <div class="buttons">
+        <button class="zap" onclick="compartilharWhatsApp()"><i class="fab fa-whatsapp"></i> </button>
+        <button class="face" onclick="compartilharFacebook()"><i class="fab fa-facebook"></i> </button>
+        <button class="inst" onclick="compartilharInstagram()"><i class="fab fa-instagram"></i> </button>
+    </div>
+
+    <script>
+        var texto = "comprei este ebook incrível e já esta começando a fazer efeito, super recomendo: "
+        var url = "mika-ebooks.netlify.app/produtos/page2.html"
+        var imagem = "/produtos/imagens/300%20RECEITAS%20PARA%20EMAGRECER.pdf.png" 
+
+        
+function compartilharWhatsApp() {
+  var link = `https://api.whatsapp.com/send?text=${texto}%20${url}`;
+  window.open(link);
+}
+
+function compartilharFacebook() {
+  var link = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${texto}&picture=${imagem}`;
+  window.open(link);
+}
+
+function compartilharInstagram() {
+  var link = `https://www.instagram.com/sharer.php?u=${url}&title=${texto}&thumbnailUrl=${imagem}`;
+  window.open(link);
+}
+
+    </script>
+
+</body>
+</html>

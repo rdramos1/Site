@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mika E-Books</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/fontawesome/fontawesome-free-6.4.0-web/css/all.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card1">
+            <img src="/produtos/imagens/BONUS EXERCICIOS EM CASA.pdf.png" alt="">
+        </div>
+        <div class="card2">
+            <h1 class="titulo">
+                Treine em casa    
+            </h1>
+            <p>
+                Guia básico e rápido para exercícios em casa Alguns exercícios podem ajudar a perder a barriga sem sair de casa. O objetivo pode ser alcançado alternando exercícios aeróbicos com os que fortalecem a musculatura. E a prática pode proporcionar benefícios que vão além da estética. Isso porque acúmulo de gordura na região abdominal pode causar problemas cardiovasculares, respiratórios e de postura.
+            </p>
+        </div>
+        <div class="card3">
+            <p class="preco">Preço: R$ 20,00</p> 
+            <a href="https://pay.kiwify.com.br/hkgdkji" class="botao-comprar">Comprar</a>
+        </div>
+        
+    </div>
+    <div class="buttons">
+        <button class="zap" onclick="compartilharWhatsApp()"><i class="fab fa-whatsapp"></i> </button>
+        <button class="face" onclick="compartilharFacebook()"><i class="fab fa-facebook"></i> </button>
+        <button class="inst" onclick="compartilharInstagram()"><i class="fab fa-instagram"></i> </button>
+    </div>
+
+    <script>
+        var texto = "comprei este ebook incrível e já esta começando a fazer efeito, super recomendo: "
+        var url = "mika-ebooks.netlify.app/produtos/page2.html"
+        var imagem = "/produtos/imagens/BONUS%20EXERCICIOS%20EM%20CASA.pdf.png" 
+
+        
+function compartilharWhatsApp() {
+  var link = `https://api.whatsapp.com/send?text=${texto}%20${url}`;
+  window.open(link);
+}
+
+function compartilharFacebook() {
+  var link = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${texto}&picture=${imagem}`;
+  window.open(link);
+}
+
+function compartilharInstagram() {
+  var link = `https://www.instagram.com/sharer.php?u=${url}&title=${texto}&thumbnailUrl=${imagem}`;
+  window.open(link);
+}
+
+    </script>
+
+</body>
+</html>
