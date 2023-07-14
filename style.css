@@ -205,7 +205,7 @@ h2{
 
 @media (max-width: 500px) {
   .product {
-    flex: 0 0 calc(50% - 20px); /* Quando a tela for menor, cada produto ocupará 50% da largura */
+    flex: 0 0 calc(50% - 20px); 
   }
 }
 
@@ -256,5 +256,6 @@ h2{
   text-align: center;
   font-size: 22px;
 }
+
 
 

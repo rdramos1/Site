@@ -240,3 +240,23 @@
     color: var(--color4);
     text-align: right;
   }
+
+  #itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#itens img {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px;
+  background-color: var(--color3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+#itens img:hover{
+  transform: scale(1.2);
+}
